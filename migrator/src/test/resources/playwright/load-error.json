@@ -1,0 +1,27 @@
+{
+  "suites": [],
+  "errors": [
+    {
+      "message": "SyntaxError: /work/playwright-output/tests/broken.spec.ts: Unexpected token, expected \",\" (4:0)\n\n  2 | test('x', async ({ page }) => {\n  3 |   await page.goto('/'\n> 4 | });\n    | ^\n  5 |",
+      "stack": "SyntaxError: /work/playwright-output/tests/broken.spec.ts: Unexpected token, expected \",\" (4:0)\n\n  2 | test('x', async ({ page }) => {\n  3 |   await page.goto('/'\n> 4 | });\n    | ^\n  5 |",
+      "location": {
+        "file": "/work/playwright-output/tests/broken.spec.ts",
+        "line": 4,
+        "column": 0
+      },
+      "snippet": "   at broken.spec.ts:4\n\n  2 | test('x', async ({ page }) => {\n  3 |   await page.goto('/'\n> 4 | });\n  5 |"
+    },
+    {
+      "message": "Error: No tests found.\nMake sure that arguments are regular expressions matching test files.\nYou may need to escape symbols like \"$\" or \"*\" and quote the arguments.",
+      "stack": "Error: No tests found.\nMake sure that arguments are regular expressions matching test files.\nYou may need to escape symbols like \"$\" or \"*\" and quote the arguments."
+    }
+  ],
+  "stats": {
+    "startTime": "2026-09-30T17:26:45.224Z",
+    "duration": 39.32499999999999,
+    "expected": 0,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

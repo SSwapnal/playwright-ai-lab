@@ -1,0 +1,114 @@
+{
+  "suites": [
+    {
+      "title": "login.spec.ts",
+      "file": "login.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "LoginTest",
+          "file": "login.spec.ts",
+          "line": 4,
+          "column": 6,
+          "specs": [
+            {
+              "title": "valid login shows secure area",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "timedOut",
+                      "duration": 30067,
+                      "error": {
+                        "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                        "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                      },
+                      "errors": [
+                        {
+                          "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                        },
+                        {
+                          "location": {
+                            "file": "/work/playwright-output/tests/login.spec.ts",
+                            "column": 35,
+                            "line": 9
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('#flash')\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 4\u001b[39m\n\n\u001b[32m- You logged into a secure area!\u001b[39m\n\u001b[31m+\u001b[39m\n\u001b[31m+ \u001b[7m            \u001b[27mYou logged into a secure area!\u001b[39m\n\u001b[31m+             \u00d7\u001b[39m\n\u001b[31m+ \u001b[43m          \u001b[49m\u001b[39m\n\nCall log:\n\u001b[2m  - Expect \"toHaveText\" locator('#flash') with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for locator('#flash')\u001b[22m\n\u001b[2m    6 \u00d7 locator resolved to <div id=\"flash\" data-alert=\"\" class=\"flash success\">\u2026</div>\u001b[22m\n\u001b[2m      - unexpected value \"\u001b[22m\n\u001b[2m            You logged into a secure area!\u001b[22m\n\u001b[2m            \u00d7\u001b[22m\n\u001b[2m          \"\u001b[22m\n\u001b[2m  - Test timeout of 30000ms exceeded.\u001b[22m\n\n\n   7 |     await loginPage.loginAs('tomsmith', 'SuperSecretPassword!');\n   8 |\n>  9 |     await expect(loginPage.flash).toHaveText('You logged into a secure area!');\n     |                                   ^\n  10 |     await expect(page).toHaveURL(/\\/secure$/);\n  11 |   });\n  12 |\n    at /work/playwright-output/tests/login.spec.ts:9:35"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-30T17:19:07.445Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "41d3fd2474a19feb00a1-29e7420db854950e74db",
+              "file": "login.spec.ts",
+              "line": 5,
+              "column": 7
+            },
+            {
+              "title": "invalid password shows error",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 29134,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-30T17:19:07.445Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "41d3fd2474a19feb00a1-6d66d68618db9072da08",
+              "file": "login.spec.ts",
+              "line": 13,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-09-30T17:19:07.232Z",
+    "duration": 30536.209000000003,
+    "expected": 1,
+    "skipped": 0,
+    "unexpected": 1,
+    "flaky": 0
+  }
+}
